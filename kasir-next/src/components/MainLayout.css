@@ -1,0 +1,73 @@
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.page-placeholder h2 {
+  color: #2c3e50;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.page-placeholder p {
+  color: #6c757d;
+  font-size: 18px;
+  margin: 0;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-placeholder {
+    margin: 15px;
+    padding: 40px 20px;
+    border-radius: 15px;
+  }
+  
+  .page-placeholder h2 {
+    font-size: 24px;
+  }
+  
+  .page-placeholder p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-placeholder {
+    margin: 10px;
+    padding: 30px 15px;
+  }
+  
+  .page-placeholder h2 {
+    font-size: 20px;
+  }
+  
+  .page-placeholder p {
+    font-size: 14px;
+  }
+}
