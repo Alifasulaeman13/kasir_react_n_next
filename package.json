@@ -1,0 +1,43 @@
+{
+  "name": "kasir_react_n_next",
+  "version": "1.0.0",
+  "description": "Sistem Kasir Modern dengan React dan Next.js - Dua implementasi dalam satu repository",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alifasulaeman13/kasir_react_n_next.git"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "kasir",
+    "pos",
+    "vite",
+    "tailwind",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Alifasulaeman13",
+  "license": "MIT",
+  "scripts": {
+    "dev:react": "cd kasir_react && npm run dev",
+    "dev:next": "cd kasir-next && npm run dev",
+    "build:react": "cd kasir_react && npm run build",
+    "build:next": "cd kasir-next && npm run build",
+    "install:all": "npm run install:react && npm run install:next",
+    "install:react": "cd kasir_react && npm install",
+    "install:next": "cd kasir-next && npm install",
+    "lint:react": "cd kasir_react && npm run lint",
+    "lint:next": "cd kasir-next && npm run lint",
+    "lint:all": "npm run lint:react && npm run lint:next",
+    "clean": "rm -rf kasir_react/node_modules kasir-next/node_modules kasir_react/dist kasir-next/.next"
+  },
+  "workspaces": [
+    "kasir_react",
+    "kasir-next"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
